@@ -58,6 +58,7 @@ article {
 
 .menu-list {
     padding-left: 0px;
+    list-style: none;
 }
 
 .indent {
