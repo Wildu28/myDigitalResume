@@ -1,0 +1,31 @@
+@keyframes animatedLogo {
+    0% {border-radius: 0%;}
+    20% {border-radius: 30%;
+        transform: translateY(-10px);}
+    40% {border-radius: 60%;
+        filter: hue-rotate(45deg);
+        transform: translateY(-15px);}
+    60% {border-radius: 90%;
+        filter: hue-rotate(90deg);
+        transform: translateY(-10px);}
+    80% {border-radius: 60%;
+        filter: hue-rotate(135deg);
+        transform: translateY(-5px);}
+    100% {border-radius: 10%;
+        filter: hue-rotate(180deg);}
+}
+
+div{
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+}
+
+img:hover{
+    width: 150px;
+    height: 150px;
+    animation-name: animatedLogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
