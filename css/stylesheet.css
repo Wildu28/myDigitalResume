@@ -3,6 +3,11 @@
 }
 
 body{
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav article"
+        "footer footer footer";
     font-family: sans-serif;
     font-size:110%;
     background-color: #FCF7F8;
@@ -27,11 +32,11 @@ section {
     font-family: arial, Arial, Helvetica, sans-serif;
 }
 
-.menu {
+aside {
     background-color: rgba(50, 70, 15, 0.747);
     color: white;
-    padding: 20px;
-    flex: 0.3;
+    /*padding: 20px;
+    flex: 0.3;*/
 }
 
 .profpic {
@@ -49,7 +54,7 @@ article {
     padding-left: 40px;
     padding-top: 30px;
     padding-bottom: 20px;
-    flex: 2;
+    /*flex: 2; */
 }
 
 .section-header {
@@ -65,3 +70,57 @@ article {
     padding-left: 20px;
     text-align: justify;
 }
+
+.eng {
+    padding-left: 20px;
+    text-align: justify;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/001/272/191/small/mobile-technology-and-engineering-background.jpg');
+    background-color:  #cec6c8 ;
+}
+
+@keyframes animatedLogo {
+    0% {border-radius: 0%;}
+    20% {border-radius: 30%;
+        transform: translateY(-10px);}
+    40% {border-radius: 60%;
+        filter: hue-rotate(45deg);
+        transform: translateY(-15px);}
+    60% {border-radius: 90%;
+        filter: hue-rotate(90deg);
+        transform: translateY(-10px);}
+    80% {border-radius: 60%;
+        filter: hue-rotate(135deg);
+        transform: translateY(-5px);}
+    100% {border-radius: 10%;
+        filter: hue-rotate(180deg);}
+}
+
+.animationDiv{
+    width: 30px;
+    height: 30px;
+}
+
+.imgLogo:hover{
+    width: 30px;
+    height: 30px;
+    animation-name: animatedLogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*@media only screen and (min-width: 600px) {
+    article {background-color: lavender;}
+}
+
+@media only screen and (min-width: 768px) {
+    article {background-color:palegoldenrod;}
+}
+
+@media only screen and (min-width: 992px) {
+    article {background-color: ghostwhite;}
+}
+
+@media only screen and (min-width: 1200px) {
+    article {background-color:#cec6c8 ;}
+}*/
